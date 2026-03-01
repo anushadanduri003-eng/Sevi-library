@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sevi Login</title>
+
+<style>
+
+/* ---------- RESET ---------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#f6f3f7,#e9ddff,#fff3c4);
+}
+
+/* LOGIN CARD */
+.login-container{
+    width:850px;
+    height:500px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    display:flex;
+    overflow:hidden;
+}
+
+/* LEFT COLOR PANEL */
+.left-panel{
+    width:45%;
+    background:linear-gradient(135deg,#7b4bb7,#b08cff);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+/* LIBRARY ICON */
+.left-panel img{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.left-panel h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.left-panel p{
+    font-size:15px;
+    opacity:0.9;
+}
+
+/* RIGHT FORM */
+.right-panel{
+    width:55%;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* LOGO */
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#6b3fa0;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.logo span{
+    width:7px;
+    height:7px;
+    background:#f0b400;
+    border-radius:50%;
+    position:absolute;
+    top:6px;
+    right:-10px;
+}
+
+/* INPUTS */
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border-radius:25px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    border-color:#7b4bb7;
+    box-shadow:0 0 6px rgba(123,75,183,0.3);
+}
+
+/* LOGIN BUTTON */
+.login-btn{
+    background:linear-gradient(135deg,#7b4bb7,#9a6cff);
+    border:none;
+    color:white;
+    padding:14px;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    transform:scale(1.05);
+}
+
+/* EXTRA LINKS */
+.extra{
+    margin-top:15px;
+    font-size:14px;
+    text-align:center;
+}
+
+.extra a{
+    color:#7b4bb7;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-panel">
+
+        <!-- ADD YOUR LIBRARY ICON -->
+        <img src="library.jpg" alt="Library Icon">
+
+        <h2>Welcome to Sevi</h2>
+        <p>
+            Explore knowledge, research and digital libraries
+            all in one place.
+        </p>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-panel">
+
+        <div class="logo">Sevi<span></span></div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Email Address">
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button class="login-btn">Login</button>
+
+        <div class="extra">
+            Don't have an account?
+            <a href="#">Register</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

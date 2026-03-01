@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sevi Template</title>
+
+<style>
+
+/* ---------- RESET ---------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f6f3f7;
+}
+
+/* ---------- NAVBAR ---------- */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+/* LOGO */
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#6b3fa0;
+    position:relative;
+}
+
+/* yellow mark */
+.logo span{
+    position:absolute;
+    width:7px;
+    height:7px;
+    background:#f0b400;
+    border-radius:50%;
+    top:6px;
+    right:-10px;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    align-items:center;
+}
+
+nav a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    padding:8px 18px;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#f1eaff;
+}
+
+nav a.active{
+    background:#efe7ff;
+    border:2px solid #d9ccff;
+    color:#6b3fa0;
+    box-shadow:0 2px 6px rgba(123,75,183,0.2);
+}
+
+/* LOGIN BUTTON */
+.login-btn{
+    background:#7b4bb7;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 60px;
+}
+
+/* TEXT */
+.hero-text{
+    max-width:520px;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#1f2a44;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#777;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* SEARCH BAR */
+.search-box{
+    background:white;
+    border-radius:30px;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    width:100%;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* SEARCH ICON */
+.search-icon{
+    font-size:18px;
+    margin-right:10px;
+    color:#888;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    flex:1;
+    font-size:16px;
+}
+
+/* IMAGE BIG */
+.hero-image{
+    width:650px;
+    height:480px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+/* ---------- RESOURCES ---------- */
+.resources{
+    background:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.resources h2{
+    font-size:38px;
+    margin-bottom:50px;
+    color:#333;
+}
+
+.resources span{
+    color:#f0b400;
+}
+
+/* ICONS */
+.icons{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+}
+
+.icon{
+    width:90px;
+    height:90px;
+    background:#ffe48a;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.3s;
+}
+
+.icon:hover{
+    transform:translateY(-8px);
+}
+
+.icon img{
+    width:40px;
+    height:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+
+<div class="logo">Sevi<span></span></div>
+
+<nav>
+    <a href="#" class="active">Home</a>
+    <a href="#">Books</a>
+    <a href="#">Libraries</a>
+    <a href="#">More</a>
+    <button class="login-btn">Login</button>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Today's research,<br>tomorrow's innovation</h1>
+
+<p>
+Accelerating research discovery to shape a better future
+</p>
+
+<div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" placeholder="Search books, articles, keywords">
+</div>
+
+</div>
+
+<div class="hero-image">
+    <img src="img96.jpg" alt="hero image">
+</div>
+
+</section>
+
+<!-- ===== RESOURCES ===== -->
+<section class="resources">
+
+<h2><span>Our</span> resources</h2>
+
+<div class="icons">
+
+<div class="icon">
+    <img src="img98.png">
+</div>
+
+<div class="icon">
+    <img src="img97.png">
+</div>
+
+<div class="icon">
+    <img src="img100.png">
+</div>
+
+<div class="icon">
+    <img src="img99.png">
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
